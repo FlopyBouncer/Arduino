@@ -1,0 +1,16 @@
+const int sensorPin = A0;
+
+void setup() {
+  Serial.begin(9600);
+
+}
+
+void loop() {
+  int sensorVal = analogRead(sensorPin);
+  Serial.print("Sensor Value: ");
+  Serial.print(sensorVal);
+  Serial.print(", Voltage: ");
+  Serial.println(sensorVal / 4);
+  delay(10);
+
+}
